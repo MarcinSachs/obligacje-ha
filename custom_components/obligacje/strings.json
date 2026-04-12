@@ -1,0 +1,27 @@
+{
+    "config": {
+        "step": {
+            "user": {
+                "title": "Polskie Obligacje Skarbowe",
+                "description": "Enter the bond series code, quantity and optional purchase date. Add one entry per bond position.",
+                "data": {
+                    "series": "Series code (e.g. EDO0130, COI0430, ROR0427)",
+                    "quantity": "Quantity (number of bonds; each = 100 PLN nominal)",
+                    "purchase_date": "Purchase date (YYYY-MM-DD, optional)"
+                },
+                "data_description": {
+                    "series": "Bond type prefix + 4 digits: MM (maturity month) + YY (maturity year). Examples: EDO0130, COI0430, OTS0726.",
+                    "purchase_date": "Leave empty to estimate from the series code (defaults to 1st of the purchase month)."
+                }
+            }
+        },
+        "abort": {
+            "already_configured": "This bond position is already being tracked."
+        },
+        "error": {
+            "series_invalid": "Invalid series code. Format: TYPE + 4 digits, e.g. EDO0130, COI0430, ROR0427. Supported types: OTS ROR DOR TOS TOZ COI ROS EDO ROD.",
+            "quantity_invalid": "Quantity must be a whole number \u2265 1.",
+            "date_invalid": "Invalid date. Use YYYY-MM-DD format, e.g. 2020-01-15."
+        }
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "config": {
+        "step": {
+            "user": {
+                "title": "Polskie Obligacje Skarbowe",
+                "description": "Podaj kod serii obligacji, ilość sztuk i opcjonalnie datę zakupu. Dodaj osobny wpis dla każdej pozycji w portfelu.",
+                "data": {
+                    "series": "Kod serii (np. EDO0130, COI0430, ROR0427)",
+                    "quantity": "Ilość sztuk (każda = 100 PLN nominału)",
+                    "purchase_date": "Data zakupu (RRRR-MM-DD, opcjonalnie)"
+                },
+                "data_description": {
+                    "series": "Prefiks typu + 4 cyfry: MM (miesiąc wykupu) + RR (rok wykupu). Przykłady: EDO0130, COI0430, OTS0726.",
+                    "purchase_date": "Zostaw puste, by oszacować datę na podstawie kodu serii (domyślnie 1. dzień miesiąca zakupu)."
+                }
+            }
+        },
+        "abort": {
+            "already_configured": "Ta pozycja obligacji jest już śledzona."
+        },
+        "error": {
+            "series_invalid": "Nieprawidłowy kod serii. Format: TYP + 4 cyfry, np. EDO0130, COI0430, ROR0427. Obsługiwane typy: OTS ROR DOR TOS TOZ COI ROS EDO ROD.",
+            "quantity_invalid": "Ilość musi być liczbą całkowitą \u2265 1.",
+            "date_invalid": "Nieprawidłowa data. Użyj formatu RRRR-MM-DD, np. 2020-01-15."
+        }
+    }
+}

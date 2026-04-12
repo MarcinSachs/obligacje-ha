@@ -1,0 +1,27 @@
+{
+    "entity": {
+        "sensor": {
+            "current_value": {
+                "default": "mdi:cash-multiple"
+            },
+            "purchase_value": {
+                "default": "mdi:cash"
+            },
+            "profit_loss": {
+                "default": "mdi:trending-up"
+            },
+            "current_rate": {
+                "default": "mdi:percent"
+            },
+            "accrued_interest": {
+                "default": "mdi:finance"
+            },
+            "maturity_date": {
+                "default": "mdi:calendar-check"
+            },
+            "days_to_maturity": {
+                "default": "mdi:calendar-clock"
+            }
+        }
+    }
+}
