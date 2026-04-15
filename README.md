@@ -40,7 +40,11 @@ This integration supports multiple bond positions and automatically fetches mark
 ## 🛠 Installation
 
 ### Option 1: HACS (Recommended)
-1. Open **HACS** → **Integrations**.
+The easiest way to install and stay updated.
+
+[![Open your Home Assistant instance and open a repository in HACS.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=MarcinSachs&repository=obligacje-ha&category=Integration)
+
+1. Click the button above or go to **HACS** → **Integrations**.
 2. Add a custom repository: `https://github.com/MarcinSachs/obligacje-ha`.
 3. Install the integration.
 4. Restart Home Assistant.
